@@ -1,0 +1,14 @@
+COMANDOS PARA EXECUTAR O DOCKER FILE
+
+ACESSE A RAIZ DO PROJETO, ABRA UM TERMINAL E:
+
+GERAR A IMAGEM. OBS.: CONFIGURE O MAVEN NA SUA MÁQUINA ANTES:
+https://www.youtube.com/watch?v=-ucX5w8Zm8s&t=210s&ab_channel=LoianeGroner
+
+COMANDOS:
+1. mvn spring-boot:build-image
+
+2. docker build -f Dockerfile -t SEU-NOME/ms-irrigacao .
+
+3. docker run -d -p 8080:8080 SEU-NOME/ms-irrigacao
+
