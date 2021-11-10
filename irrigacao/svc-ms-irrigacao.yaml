@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc-ms-irrigacao
+spec:
+  type: ClusterIP
+  ports:
+    # ele vai encaminhar pra porta 8080
+    - port: 8080
+  selector:
+    app: ms-irrigacao

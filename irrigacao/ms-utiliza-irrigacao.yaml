@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ms-utiliza-irrigacao
+  labels:
+    app: ms-utiliza-irrigacao
+spec:
+  containers:
+    - name: ms-utiliza-irrigacao-container
+      image: castroclucas82/ms-utiliza-irrigacao-operacoes
+      ports:
+        - containerPort: 8000
+      envFrom:
+        - configMapRef:
+            name: ms-utiliza-irrigacao-configmap

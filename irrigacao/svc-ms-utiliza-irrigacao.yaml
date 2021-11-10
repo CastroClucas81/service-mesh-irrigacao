@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc-ms-utiliza-irrigacao
+spec:
+  type: NodePort
+  ports:
+    # ele vai encaminhar pra porta 8080
+    - port: 8000
+      nodePort: 30004
+  selector:
+    app: ms-utiliza-irrigacao
