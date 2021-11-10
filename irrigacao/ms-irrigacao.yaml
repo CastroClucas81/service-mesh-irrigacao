@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ms-irrigacao
+  labels:
+    app: ms-irrigacao
+spec:
+  containers:
+    - name: ms-irrigacao-container
+      image: castroclucas82/ms-irrigacao
+      ports:
+        - containerPort: 8080
