@@ -16,7 +16,6 @@ import javax.validation.Valid;
 
 @RestController
 public class UtilizaOperacoesIrrigacaoController {
-
     @Value("${rota.base}")
     private String rotaBase;
 
